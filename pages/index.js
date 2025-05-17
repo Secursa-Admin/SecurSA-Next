@@ -18,7 +18,7 @@ export default function Home() {
       </header>
 
       {/* Hero Section */}
-      <section className="px-8 pt-12 pb-8">
+      <section className="px-8 pt-12 pb-6">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 items-center">
           <div>
             <h1 className="text-5xl font-bold text-[#00205B] leading-tight mb-4">
@@ -53,7 +53,7 @@ export default function Home() {
       {/* Why Use Section */}
       <section className="bg-[#F9FAFB] px-8 pt-4 pb-12">
         <h2 className="text-3xl font-bold text-[#00205B] mb-6">Why Use SecurSA?</h2>
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-x-10 gap-y-6">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-x-6 gap-y-6">
           {[
             ["No shady operators allowed.", "We only list PSIRA-registered pros. No cowboys, no chancers."],
             ["No pushy sales calls. Ever.", "You're in control — you pick who contacts you."],
@@ -64,10 +64,10 @@ export default function Home() {
             ["Locally matched, nationwide reach.", "From Cape Town to Kuruman — we’ll find you the right fit."],
             ["No obligation. No contracts.", "Browse, compare, walk away. We won’t sulk."],
             ["Built for South Africans, by South Africans.", "We get the risks. We’ve lived them. And we built a solution that works."],
-            ["💬 Ask Surelock", "Your friendly guide to smart security choices."]
+            ["Ask Surelock", "Your friendly guide to smart security choices."]
           ].map(([title, line], i) => (
             <div key={i} className="flex items-start">
-              <span className="text-[#84BD00] text-xl mr-2">🔐</span>
+              <span style={{ color: '#84BD00' }} className="text-xl mr-2">🔐</span>
               <div>
                 <p className="text-[#00205B] font-medium">{title}</p>
                 <p className="text-[#00205B] italic">{line}</p>
