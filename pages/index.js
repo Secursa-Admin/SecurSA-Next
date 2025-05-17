@@ -4,6 +4,20 @@ import Image from "next/image";
 export default function Home() {
   return (
     <main className="bg-white min-h-screen">
+      {/* Navigation */}
+      <header className="flex items-center justify-between px-8 py-4 bg-white shadow">
+        <div className="flex items-center gap-4">
+          <Image src="/logo.png" alt="SecurSA Logo" width={160} height={40} />
+        </div>
+        <nav className="flex gap-6 text-[#00205B] font-medium text-sm">
+          <a href="#" className="hover:underline">About Us</a>
+          <a href="#" className="hover:underline">Contact Us</a>
+          <a href="#" className="hover:underline">Login</a>
+          <a href="#" className="hover:underline">Ask Surelock</a>
+        </nav>
+      </header>
+
+      {/* Hero Section */}
       <section className="px-8 py-12">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
           <div>
@@ -13,12 +27,15 @@ export default function Home() {
             <p className="text-lg text-[#00205B] mb-8">
               Whether it’s your home, your business, or your granny’s spaza shop — we’ll connect you to trusted, <span style={{ color: '#84BD00', fontWeight: 'bold' }}>PSIRA-registered security companies</span> in less time than it takes to pour a Brannas & Coke — or crack open a Black Label.
             </p>
-            <div className="grid grid-cols-2 sm:grid-cols-3 gap-4 mb-10">
+            <div className="grid grid-cols-2 sm:grid-cols-3 gap-4 mb-6">
               {["Alarm Systems", "Armed Response", "Guarding", "CCTV", "Off-Site Monitoring"].map((label, i) => (
                 <button key={i} className="bg-[#00205B] text-white py-3 px-4 rounded-2xl shadow">
                   {label}
                 </button>
               ))}
+              <button className="bg-[#84BD00] text-white py-3 px-4 rounded-2xl shadow col-span-2 sm:col-span-1">
+                Training Centre
+              </button>
             </div>
           </div>
           <div className="flex justify-center">
@@ -33,9 +50,10 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="bg-[#F9FAFB] px-8 py-12">
+      {/* Why Use Section */}
+      <section className="bg-[#F9FAFB] px-8 pt-4 pb-12">
         <h2 className="text-3xl font-bold text-[#00205B] mb-6">Why Use SecurSA?</h2>
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
           {[
             ["No shady operators allowed.", "We only list PSIRA-registered pros. No cowboys, no chancers."],
             ["No pushy sales calls. Ever.", "You're in control — you pick who contacts you."],
