@@ -16,12 +16,12 @@ const PadlockIcon = () => (
 export default function Home() {
   return (
     <main className="bg-white">
-      <header className="bg-white py-1 px-6 shadow-sm sticky top-0 z-50">
-        <div className="max-w-7xl mx-auto flex justify-between items-center">
-          <div className="flex items-center">
-            <Image src="/logo.png" alt="SecurSA Logo" width={240} height={60} />
+      <header className="bg-white px-6 shadow-sm sticky top-0 z-50">
+        <div className="max-w-7xl mx-auto flex justify-between items-center h-[90px]">
+          <div className="flex items-center h-full">
+            <Image src="/logo.png" alt="SecurSA Logo" height={70} width={240} />
           </div>
-          <nav className="flex items-center space-x-6 text-[#00205B] font-medium text-sm">
+          <nav className="flex items-center space-x-10 text-[#00205B] font-semibold text-base">
             <a href="#" className="hover:underline">About Us</a>
             <a href="#" className="hover:underline">Contact Us</a>
             <a href="#" className="hover:underline">Login</a>
@@ -29,6 +29,7 @@ export default function Home() {
           </nav>
         </div>
       </header>
+
       <section className="bg-[#f9fafc] py-10 px-6 relative overflow-hidden">
         <div className="max-w-7xl mx-auto relative z-10">
           <h1 className="text-5xl font-bold leading-tight mb-6 text-[#00205B] text-center md:text-left max-w-5xl mx-auto">
@@ -63,6 +64,7 @@ export default function Home() {
           </div>
         </div>
       </section>
+
       <section className="py-10 px-6 bg-gradient-to-b from-white to-[#f5f7fa]">
         <div className="max-w-7xl mx-auto bg-white rounded-xl shadow-md p-8">
           <h2 className="text-3xl font-bold mb-8 text-center text-[#00205B]">Why Use SecurSA?</h2>
@@ -90,6 +92,7 @@ export default function Home() {
           </div>
         </div>
       </section>
+
       <footer className="py-6 px-6 bg-white border-t border-gray-200">
         <div className="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-center">
           <p className="text-sm text-gray-600">&copy; 2023 SecurSA. All rights reserved.</p>
