@@ -2,16 +2,27 @@
 import React from "react";
 import Image from "next/image";
 
+const PadlockIcon = () => (
+  <div
+    className="inline-block w-6 h-6 mr-3"
+    style={{
+      backgroundColor: "#84BD00",
+      WebkitMask: "url('data:image/svg+xml;utf8,<svg xmlns=%22http://www.w3.org/2000/svg%22 fill=%22none%22 viewBox=%220 0 24 24%22 stroke=%22currentColor%22><rect x=%223%22 y=%2211%22 width=%2218%22 height=%2211%22 rx=%222%22 ry=%222%22/><path d=%22M7 11V7a5 5 0 0 1 10 0v4%22/></svg>') no-repeat center",
+      mask: "url('data:image/svg+xml;utf8,<svg xmlns=%22http://www.w3.org/2000/svg%22 fill=%22none%22 viewBox=%220 0 24 24%22 stroke=%22currentColor%22><rect x=%223%22 y=%2211%22 width=%2218%22 height=%2211%22 rx=%222%22 ry=%222%22/><path d=%22M7 11V7a5 5 0 0 1 10 0v4%22/></svg>') no-repeat center"
+    }}
+  />
+);
+
 export default function Home() {
   return (
     <main className="bg-white">
       {/* Header */}
-      <header className="bg-white py-3 px-6 shadow-sm sticky top-0 z-50">
+      <header className="bg-white py-1.5 px-6 shadow-sm sticky top-0 z-50">
         <div className="max-w-7xl mx-auto flex justify-between items-center">
-          <div className="w-56">
-            <Image src="/logo.png" alt="SecurSA Logo" width={220} height={60} />
+          <div className="w-[300px]">
+            <Image src="/logo.png" alt="SecurSA Logo" width={300} height={70} />
           </div>
-          <nav className="flex items-center space-x-8 text-[#00205B] font-medium text-sm">
+          <nav className="flex items-center space-x-6 text-[#00205B] font-medium text-sm">
             <a href="#" className="hover:underline">About Us</a>
             <a href="#" className="hover:underline">Contact Us</a>
             <a href="#" className="hover:underline">Login</a>
@@ -74,7 +85,7 @@ export default function Home() {
               ["Ask Surelock", "Your friendly guide to smart security choices."]
             ].map(([title, text], i) => (
               <div key={i} className="flex items-start bg-white p-4 rounded-lg shadow-sm hover:shadow-md transition-shadow">
-                <div className="flex-shrink-0 mr-3 text-[#84BD00] text-xl font-bold">🔐</div>
+                <PadlockIcon />
                 <div>
                   <h3 className="text-lg font-bold text-[#00205B]">{title}</h3>
                   <p className="italic text-[#00205B] opacity-90">{text}</p>
