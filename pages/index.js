@@ -93,6 +93,25 @@ export default function Home() {
         </div>
       </section>
 
+
+{/* 🔽 ABOUT US SECTION */}
+<section id="about" className="py-16 px-6 bg-white border-t border-gray-200">
+  <div className="max-w-6xl mx-auto text-center">
+    <h2 className="text-3xl font-bold text-[#00205B] mb-6">About Us</h2>
+    <p className="text-lg text-[#00205B] mb-4">
+      <span className="text-[#84BD00] font-bold">SecurSA</span> is South Africa’s first digital platform dedicated to connecting everyday South Africans with 
+      <span className="text-[#84BD00] font-bold"> PSIRA-registered</span> security providers — instantly and securely.
+    </p>
+    <p className="text-lg text-[#00205B] mb-4 italic">
+      Whether you’re a homeowner, business owner, or a training candidate, we built this to help you make safer choices — without the pressure of sales calls or fake promises.
+    </p>
+    <p className="text-lg text-[#00205B]">
+      We are proudly local, independently built, and fiercely committed to making security access faster, fairer, and smarter for everyone.
+    </p>
+  </div>
+</section>
+
+
       <footer className="py-6 px-6 bg-white border-t border-gray-200">
         <div className="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-center">
           <p className="text-sm text-gray-600">&copy; 2023 SecurSA. All rights reserved.</p>
