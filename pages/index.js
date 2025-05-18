@@ -93,21 +93,50 @@ export default function Home() {
         </div>
       </section>
 
-
 {/* 🔽 ABOUT US SECTION */}
 <section id="about" className="py-16 px-6 bg-white border-t border-gray-200">
-  <div className="max-w-6xl mx-auto text-center">
+  <div className="max-w-4xl mx-auto text-center">
     <h2 className="text-3xl font-bold text-[#00205B] mb-6">About Us</h2>
+    
     <p className="text-lg text-[#00205B] mb-4">
-      <span className="text-[#84BD00] font-bold">SecurSA</span> is South Africa’s first digital platform dedicated to connecting everyday South Africans with 
-      <span className="text-[#84BD00] font-bold"> PSIRA-registered</span> security providers — instantly and securely.
+      <span className="text-[#84BD00] font-bold">SecurSA</span> is South Africa’s first security marketplace where consumers and companies connect in under 2 minutes — safely, transparently, and without the sales fluff.
     </p>
-    <p className="text-lg text-[#00205B] mb-4 italic">
-      Whether you’re a homeowner, business owner, or a training candidate, we built this to help you make safer choices — without the pressure of sales calls or fake promises.
+
+    <p className="text-lg text-[#00205B] mb-4">
+      We built this platform because we’ve lived through the real risks. From burglaries to break-ins, from dodgy security promises to fly-by-night operators — we’ve seen it all.
     </p>
-    <p className="text-lg text-[#00205B]">
-      We are proudly local, independently built, and fiercely committed to making security access faster, fairer, and smarter for everyone.
+
+    <p className="text-lg text-[#00205B] mb-6">
+      That’s why we’ve created a smarter way.
     </p>
+
+    <h3 className="text-xl font-bold text-[#84BD00] mb-2">Built by Locals, for Locals</h3>
+    <p className="text-lg text-[#00205B] mb-4">
+      SecurSA is 100% South African, proudly female-owned, and run by a team with deep roots in the security industry. We know the dangers you face. More importantly — we know how to match you with real solutions that work.
+    </p>
+
+    <h3 className="text-xl font-bold text-[#84BD00] mb-2">How it Works</h3>
+    <p className="text-lg text-[#00205B] mb-4">
+      Whether you’re looking for an alarm, armed response, guarding, CCTV, offsite monitoring, or PSIRA-accredited training — we’ve got you covered. Just pick your service, compare real quotes from verified providers, and take back control of your security.
+    </p>
+    <p className="text-lg text-[#00205B] mb-6 italic">No chancers. No contracts. No pressure.</p>
+
+    <h3 className="text-xl font-bold text-[#84BD00] mb-2">Our Mission</h3>
+    <p className="text-lg text-[#00205B] mb-4">
+      To empower every South African with access to quality, verified, and affordable security services — no matter where you live or what your budget is.
+    </p>
+
+    <h3 className="text-xl font-bold text-[#84BD00] mb-2">Our Vision</h3>
+    <p className="text-lg text-[#00205B] mb-4">
+      To become the go-to platform for South African security services — from spaza shops to suburbs, mines to malls.
+    </p>
+
+    <h3 className="text-xl font-bold text-[#84BD00] mb-2">Why Trust Us?</h3>
+    <ul className="text-left text-lg text-[#00205B] list-disc list-inside">
+      <li className="mb-1">We verify every provider on the platform.</li>
+      <li className="mb-1">We’re independent — we don’t push any brand or company.</li>
+      <li className="mb-1">We’ve designed every feature with you, the South African consumer, in mind.</li>
+    </ul>
   </div>
 </section>
 
